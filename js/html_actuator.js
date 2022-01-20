@@ -42,7 +42,6 @@ dogeSayings = [
 //  'Vauvanaskelia!', // Mitä tää edes tarkoittaa?
 
   // Tunteja
-  'Köksää!',
   'Matikkaa!',
   'Ruåtsia ┌∩┐(ಠ_ಠ)┌∩┐',
   'Minervaan!',
