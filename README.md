@@ -1,4 +1,4 @@
 # Oispa Norssissa!
 Saatko kirjoitettua laudaturin? Norssi-teemainen 2048-klooni.
 
-Pelaa [täällä](https://oispanorssissa.tk/)!
+Pelaa [täällä](https://oispanorssissa.fi/)!
