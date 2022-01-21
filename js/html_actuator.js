@@ -43,7 +43,7 @@ dogeSayings = [
 
   // Tunteja
   'Matikkaa!',
-  'Ruåtsia ┌∩┐(ಠ_ಠ)┌∩┐',
+  'Ruåtsia',
   'Minervaan!',
   'Fysiikan tunnille!',
   'Kuvista!',
