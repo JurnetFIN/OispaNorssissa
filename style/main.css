@@ -20,7 +20,7 @@ body {
 }
 
 .heading:after {
-  content: "Norssi aiheinen 2048-peli";
+  content: "Tampereen Yliopiston Norssi aiheinen 2048-peli";
   font-size: 12px;
   font-weight: bold;
 //display: block;
