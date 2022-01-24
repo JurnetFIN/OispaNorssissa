@@ -171,7 +171,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   if (difference > 0) {
 
-    snd = new Audio("oispanorssissa.fi/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
+    snd = new Audio("/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -193,7 +193,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
   else
   {
-    snd = new Audio("oispanorssissa.fi/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
+    snd = new Audio("/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
   }
 
   snd.play();
