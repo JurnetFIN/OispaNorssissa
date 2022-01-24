@@ -5,18 +5,18 @@ window.requestAnimationFrame(function () {
 
 
     var imageList = [
-        "oispanorssissa.fi/img/2.png",
-        "oispanorssissa.fi/img/4.png",
-        "oispanorssissa.fi/img/8.png",
-        "oispanorssissa.fi/img/16.png",
-        "oispanorssissa.fi/img/32.png",
-        "oispanorssissa.fi/img/64.png",
-        "oispanorssissa.fi/img/128.png",
-        "oispanorssissa.fi/img/256.png",
-        "oispanorssissa.fi/img/512.png",
-        "oispanorssissa.fi/img/1024.png",
-        "oispanorssissa.fi/img/2048.png",
-	"oispakalussa.tk/img/katko.png"
+        "/img/2.png",
+        "/img/4.png",
+        "/img/8.png",
+        "/img/16.png",
+        "/img/32.png",
+        "/img/64.png",
+        "/img/128.png",
+        "/img/256.png",
+        "/img/512.png",
+        "/img/1024.png",
+        "/img/2048.png",
+	"/img/katko.png"
 
     ];
     for(var i = 0; i < imageList.length; i++ )
