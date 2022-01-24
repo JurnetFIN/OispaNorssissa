@@ -171,7 +171,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   if (difference > 0) {
 
-    snd = new Audio("https://www.oispanorssissa.fi/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
+    snd = new Audio("oispanorssissa.fi/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -193,7 +193,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
   else
   {
-    snd = new Audio("https://www.oispanorssissa.fi/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
+    snd = new Audio("oispanorssissa.fi/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
   }
 
   snd.play();
@@ -230,34 +230,3 @@ HTMLActuator.prototype.showInfo = function () {
 HTMLActuator.prototype.hideInfo = function () {
     this.info.setAttribute('style','display:none;');
 }
-
-//HTMLActuator.prototype.goKatko = function () {
-//
-//    snd = new Audio("https://www.oispakalussa.tk/snd/katkolle.ogg");
-//    snd.play();
-//
-//    this.clearContainer(this.scoreContainer);
-//    this.clearContainer(this.katkoViesti);
-//    this.clearContainer(this.dogeSays);
-//    this.scoreContainer.textContent = this.score-1000;
-//
-//    var addition = document.createElement("div");
-//    addition.classList.add("score-addition");
-//    addition.textContent = "-1000";
-//    this.scoreContainer.appendChild(addition);
-//
-    //var message = "KATKOLLE!";
-//    var messageElement = document.createElement("img");
-//    messageElement.setAttribute('src',"https://www.oispakalussa.tk/img/katko.png");
-    //messageElement.textContent = message;
-    //var left = 'left: 37%;';
-    //var top = 'top: 10%;';
-
-    //var color = 'color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');'
-    //var color = 'font-weight: bold; color: black; text-shadow:0px 0px 50px #ff0000;}';
-    //var styleString = left + top;
-    //messageElement.setAttribute('style', styleString);
-//    this.katkoViesti.appendChild(messageElement);
-//    return true;
-//}
-
