@@ -282,7 +282,6 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #C00;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -375,6 +374,18 @@ hr {
       padding: 0 20px;
       text-decoration: none;
       color: #CCC;
+      height: 40px;
+      line-height: 42px;
+      margin-left: 9px; }
+      .game-container .game-message a.keep-playing-button {
+        display: none; }
+    .game-container .game-message .buttom {
+      display: inline-block;
+      //background: #ccc;
+      border-radius: 3px;
+      padding: 0 20px;
+      text-decoration: none;
+      color: #C00;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
