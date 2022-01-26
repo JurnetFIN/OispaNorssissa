@@ -1,4 +1,4 @@
 # Oispa Norssissa!
 Saatko kirjoitettua laudaturin? Norssi-teemainen 2048-versio.
 
-Pelaa [täällä](https://oispanorssissa.fi/)
+Pelaa [täällä](https://oispanorssissa.fi/)!
