@@ -16,7 +16,7 @@ window.requestAnimationFrame(function () {
         "/img/512.png",
         "/img/1024.png",
         "/img/2048.png",
-	"/img/katko.png"
+	"/img/bileet1.png"
 
     ];
     for(var i = 0; i < imageList.length; i++ )
