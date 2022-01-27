@@ -64,7 +64,7 @@ KeyboardInputManager.prototype.listen = function () {
   var showInfo = document.querySelector(".info-container");
   showInfo.addEventListener("click", this.showInfo.bind(this));
   showInfo.addEventListener("touchend", this.showInfo.bind(this));
-  
+ 
   var goKatko = document.querySelector(".katko-container");
   goKatko.addEventListener("click", this.goKatko.bind(this));
   goKatko.addEventListener("touchend", this.goKatko.bind(this));
@@ -130,6 +130,3 @@ KeyboardInputManager.prototype.goKatko = function (event) {
   event.preventDefault();
   this.emit("goKatko");
 };
-
-
-
