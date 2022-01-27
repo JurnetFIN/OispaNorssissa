@@ -5,7 +5,7 @@ html, body {
   color: #000;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 /*  font-family: 'Comic Sans', 'Comic Sans', Chalkboard, Helvetica, Arial, sans-serif; */
-    background: url('/img/megabg.png');
+    background: url('https://oispanorssissa.fi/img/megabg.png');
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
@@ -158,10 +158,10 @@ h1.title {
 
 .scores-container {
   float: right;
-  text-align: right;
-  background: #FFF; }
+  text-align: right; 
+  background: #FFF;}
 
-.game-container .doge-says {
+.game-container .doge-says, .game-container .katkoviesti {
   position: fixed;
   top: 0;
   left: 0;
@@ -179,6 +179,28 @@ h1.title {
     -moz-animation-fill-mode: both;
     animation-fill-mode: both;
   }
+  .game-container .katkoviesti {
+      position: absolute;
+          height: 400px;
+    width: 500px;
+    margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+  }
+  .game-container .katkoviesti img {
+
+    font-size: 60px;
+    font-weight: bold;
+
+    line-height: 60px;
+    -webkit-animation: fade-in-out 4000ms ease-out;
+    -moz-animation: fade-out 4000ms ease-out;
+    animation: fade-in-out 4000ms ease-out;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
   .buttons-container {
     position: relative;
 
@@ -191,7 +213,7 @@ h1.title {
 
     margin-bottom:22px;}
 
-  .info-container, .hide-info {
+  .info-container, .hide-info, .katko-container {
     display: inline-block;
     border: 1px solid white;
     background: #fff;
@@ -204,7 +226,7 @@ h1.title {
     color: white;
     margin-top: 8px;
     text-align: center; }
-      .info-container a, .hide-info a {
+      .info-container a, .hide-info a, .katko-container a {
         color:#222;
         text-decoration:none;}
 
@@ -282,11 +304,12 @@ p {
   line-height: 1.65; }
 
 a {
+  color: #000;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
 
-.info-container:hover {
+.info-container:hover, .katko-container:hover {
     border: 1px solid black!important;
 }
 
@@ -389,8 +412,6 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
-      .game-container .game-message a.keep-playing-button {
-        display: none; }
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
       color: #f9f6f2; }
@@ -516,33 +537,33 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #fff url('/img/2.png');
+    background: #fff url('https://oispanorssissa.fi/img/2.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 
   .tile.tile-4 .tile-inner {
-    background: #fff url('/img/4.png');
+    background: #fff url('https://oispanorssissa.fi/img/4.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 
   .tile.tile-8 .tile-inner {
-    background: #fff url('/img/8.png');
+    background: #fff url('https://oispanorssissa.fi/img/8.png');
     background-size: cover;}
 
   .tile.tile-16 .tile-inner {
-    background: #fff url('/img/16.png');
+    background: #fff url('https://oispanorssissa.fi/img/16.png');
     background-size: cover;}
 
   .tile.tile-32 .tile-inner {
-    background: #fff url('/img/32.png');
+    background: #fff url('https://oispanorssissa.fi/img/32.png');
     background-size: cover;}
 
   .tile.tile-64 .tile-inner {
-    background: #fff url('/img/64.png');
+    background: #fff url('https://oispanorssissa.fi/img/64.png');
     background-size: cover;}
 
   .tile.tile-128 .tile-inner {
-    background: #fff url('/img/128.png');
+    background: #fff url('https://oispanorssissa.fi/img/128.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
@@ -551,7 +572,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
 
-    background: #fff url('/img/256.png');
+    background: #fff url('https://oispanorssissa.fi/img/256.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.41746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
@@ -560,7 +581,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
 
-    background: #fff url('/img/512.png');
+    background: #fff url('https://oispanorssissa.fi/img/512.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(116, 116, 243, 0.42683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
@@ -568,7 +589,7 @@ hr {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    background: #fff url('/img/1024.png');
+    background: #fff url('https://oispanorssissa.fi/img/1024.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 116, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
@@ -577,7 +598,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
 
-    background: #fff url('/img/2048.png');
+    background: #fff url('https://oispanorssissa.fi/img/2048.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(116, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
@@ -586,7 +607,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
 
-    background: #fff url('/img/super.png');
+    background: #fff url('https://oispanorssissa.fi/img/super.png');
     background-size: cover;
     font-size: 30px; }
     @media screen and (max-width: 480px) {
