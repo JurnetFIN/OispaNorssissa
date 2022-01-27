@@ -157,7 +157,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   this.scoreContainer.textContent = this.score;
 
-  if (this.score > 100)
+  if (this.score > 10000)
       {
           this.katkoContainerColor.setAttribute('style', 'background-color: #0c0!important');
 
@@ -243,7 +243,7 @@ HTMLActuator.prototype.goKatko = function () {
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
-    addition.textContent = "-1000";
+    addition.textContent = "-10000";
     this.scoreContainer.appendChild(addition);
 
     var messageElement = document.createElement("img");
