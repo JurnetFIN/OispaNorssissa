@@ -84,12 +84,12 @@ Grid.prototype.withinBounds = function (position) {
 };
 
 
-//Grid.prototype.katkoReissu = function () {
-//  for (var x = 0; x < this.size; x++) {
-//    for (var y = 0; y < this.size; y++) {
-//      if ((this.cells[x][y]) && (this.cells[x][y].value < 16)) {
-//          this.cells[x][y] = null;
-//      }
-//    }
-//  }
-//};
+Grid.prototype.katkoReissu = function () {
+  for (var x = 0; x < this.size; x++) {
+    for (var y = 0; y < this.size; y++) {
+      if ((this.cells[x][y]) && (this.cells[x][y].value < 16)) {
+          this.cells[x][y] = null;
+      }
+    }
+  }
+};
