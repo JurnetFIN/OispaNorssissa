@@ -1,13 +1,13 @@
 function HTMLActuator() {
-  this.tileContainer    = document.querySelector(".tile-container");
-  this.scoreContainer   = document.querySelector(".score-container");
-  this.bestContainer    = document.querySelector(".best-container");
-  this.messageContainer = document.querySelector(".game-message");
-  this.buttonsContainer = document.querySelector(".lower-container");
-  this.info             = document.querySelector(".info");
-  this.dogeSays = document.querySelector(".doge-says");
-//  this.katkoViesti = document.querySelector(".katkoviesti");
-//  this.katkoContainerColor = document.querySelector(".katko-container-color");
+  this.tileContainer    	= document.querySelector(".tile-container");
+  this.scoreContainer   	= document.querySelector(".score-container");
+  this.bestContainer    	= document.querySelector(".best-container");
+  this.messageContainer 	= document.querySelector(".game-message");
+  this.buttonsContainer 	= document.querySelector(".lower-container");
+  this.info             	= document.querySelector(".info");
+  this.dogeSays 		= document.querySelector(".doge-says");
+  this.katkoViesti 		= document.querySelector(".katkoviesti");
+  this.katkoContainerColor 	= document.querySelector(".katko-container-color");
 
   this.score = 0;
 
@@ -157,15 +157,15 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   this.scoreContainer.textContent = this.score;
 
-//  if (this.score > 1000)
-//      {
-//          this.katkoContainerColor.setAttribute('style', 'background-color: #0c0!important');
-//
-//      }
-//      else {
-//          this.katkoContainerColor.setAttribute('style', 'background-color: #c00!important');
-//      
-//}
+  if (this.score > 100)
+      {
+          this.katkoContainerColor.setAttribute('style', 'background-color: #0c0!important');
+
+      }
+      else {
+          this.katkoContainerColor.setAttribute('style', 'background-color: #c00!important');
+      
+}
 
    var snd;
 
@@ -229,4 +229,26 @@ HTMLActuator.prototype.showInfo = function () {
 
 HTMLActuator.prototype.hideInfo = function () {
     this.info.setAttribute('style','display:none;');
+}
+
+HTMLActuator.prototype.goKatko = function () {
+
+    snd = new Audio("https://www.oispakalussa.tk/snd/katkolle.ogg");
+    snd.play();
+
+    this.clearContainer(this.scoreContainer);
+    this.clearContainer(this.katkoViesti);
+    this.clearContainer(this.dogeSays);
+    this.scoreContainer.textContent = this.score-100;
+
+    var addition = document.createElement("div");
+    addition.classList.add("score-addition");
+    addition.textContent = "-1000";
+    this.scoreContainer.appendChild(addition);
+
+    var messageElement = document.createElement("img");
+    messageElement.setAttribute('src',"https://oispanorssissa.fi/img/bileet1.png");
+
+    this.katkoViesti.appendChild(messageElement);
+    return true;
 }
