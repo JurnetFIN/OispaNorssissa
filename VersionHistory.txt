@@ -40,3 +40,4 @@ Uusi peli julkaistu osoitteessa oispanorssissa.fi
 1.4.3 -- 27/01/2022
 -Lisätty palautteiden perusteella insideläppä ilmianto
 -Lisätty "ilmianna läppä" häviämis ruutuun
+-Korjattu kirjoitusvirheitä
