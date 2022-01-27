@@ -28,6 +28,7 @@ GameManager.prototype.keepPlaying = function () {
   this.actuator.continue();
 };
 
+// nayta ohjeet
 GameManager.prototype.showInfo = function () {
 
   this.actuator.showInfo();
