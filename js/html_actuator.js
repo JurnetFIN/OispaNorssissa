@@ -233,13 +233,13 @@ HTMLActuator.prototype.hideInfo = function () {
 
 HTMLActuator.prototype.goKatko = function () {
 
-    snd = new Audio("https://www.oispakalussa.tk/snd/katkolle.ogg");
+    snd = new Audio("/snd/katkolle.ogg");
     snd.play();
 
     this.clearContainer(this.scoreContainer);
     this.clearContainer(this.katkoViesti);
     this.clearContainer(this.dogeSays);
-    this.scoreContainer.textContent = this.score-100;
+    this.scoreContainer.textContent = this.score-10000;
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -247,7 +247,7 @@ HTMLActuator.prototype.goKatko = function () {
     this.scoreContainer.appendChild(addition);
 
     var messageElement = document.createElement("img");
-    messageElement.setAttribute('src',"https://oispanorssissa.fi/img/bileet1.png");
+    messageElement.setAttribute('src',"/img/bileet1.png");
 
     this.katkoViesti.appendChild(messageElement);
     return true;
