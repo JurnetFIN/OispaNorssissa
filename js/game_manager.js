@@ -11,7 +11,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
   this.inputManager.on("showInfo", this.showInfo.bind(this));
   this.inputManager.on("hideInfo", this.hideInfo.bind(this));
-//  this.inputManager.on("goKatko", this.goKatko.bind(this));
+  this.inputManager.on("goKatko", this.goKatko.bind(this));
 
   this.setup();
 }
@@ -38,25 +38,23 @@ GameManager.prototype.hideInfo = function () {
   this.actuator.hideInfo();
 };
 
-//GameManager.prototype.goKatko = function () {
-//  if (this.score > 1000) {
-//      this.score -= 1000;
-//    this.grid.katkoReissu();
-//        this.actuate();
-//        this.actuator.goKatko();
-//
-//
-//
-//  }
-//  else {
-//      //ei tarpeeksi mielenterveyttä TVT-tunnille!
-//     // alert("Et ole psyykkisesti tarpeeksi terve TVT-tunnille!");
-//    snd = new Audio("https://www.oispakalussa.tk/snd/buzz.mp3");
-//    snd.play();
-//  }
-//
-//
-//};
+GameManager.prototype.goKatko = function () {
+  if (this.score > 100) {
+      this.score -= 100;
+    this.grid.katkoReissu();
+        this.actuate();
+        this.actuator.goKatko();
+
+  }
+  else {
+      //ei tarpeeksi mielenterveyttä TVT-tunnille!
+     // alert("Et ole psyykkisesti tarpeeksi terve TVT-tunnille!");
+    snd = new Audio("https://www.oispakalussa.tk/snd/buzz.mp3");
+    snd.play();
+  }
+
+
+};
 
 GameManager.prototype.isGameTerminated = function () {
   if (this.over || (this.won && !this.keepPlaying)) {
