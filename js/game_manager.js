@@ -50,7 +50,7 @@ GameManager.prototype.goKatko = function () {
   else {
       //ei tarpeeksi mielenterveyttä TVT-tunnille!
      // alert("Et ole psyykkisesti tarpeeksi terve TVT-tunnille!");
-    snd = new Audio("https://www.oispakalussa.tk/snd/buzz.mp3");
+    snd = new Audio("/snd/buzz.mp3");
     snd.play();
   }
 
