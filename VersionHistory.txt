@@ -25,7 +25,12 @@ Uusi peli julkaistu osoitteessa oispanorssissa.fi
 -Lisätty ja selkennetty ohjeita
 
 1.4.1 -- 27/01/20222
--Pienet korjaukset
+-Bugien korjaaminen
+-Pienet kuvalinkki korjaukset
 
 1.4.2 -- 27/01/2022
 -Uusi paypal kuva
+
+1.4.3 -- 27/01/2022
+-Lisätty palautteiden perusteella insideläppä ilmianto
+-Lisätty "ilmianna läppä" häviämis ruutuun
