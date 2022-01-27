@@ -40,8 +40,8 @@ GameManager.prototype.hideInfo = function () {
 };
 
 GameManager.prototype.goKatko = function () {
-  if (this.score > 100) {
-      this.score -= 100;
+  if (this.score > 10000) {
+      this.score -= 10000;
     this.grid.katkoReissu();
         this.actuate();
         this.actuator.goKatko();
