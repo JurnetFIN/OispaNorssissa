@@ -41,3 +41,5 @@ Uusi peli julkaistu osoitteessa oispanorssissa.fi
 -Lisätty palautteiden perusteella insideläppä ilmianto
 -Lisätty "ilmianna läppä" häviämis ruutuun
 -Korjattu kirjoitusvirheitä
+1.4.4 -- 31/01/2022
+-Poistettu äänet KL Corporation pyynnöstä
