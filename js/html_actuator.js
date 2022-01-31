@@ -167,11 +167,7 @@ HTMLActuator.prototype.updateScore = function (score) {
       
 }
 
-   var snd;
-
   if (difference > 0) {
-
-    snd = new Audio("/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -191,12 +187,6 @@ HTMLActuator.prototype.updateScore = function (score) {
     this.dogeSays.appendChild(messageElement);
 
   }
-  else
-  {
-    snd = new Audio("/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
-  }
-
-  snd.play();
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
@@ -233,8 +223,8 @@ HTMLActuator.prototype.hideInfo = function () {
 
 HTMLActuator.prototype.goKatko = function () {
 
-    snd = new Audio("/snd/katkolle.ogg");
-    snd.play();
+    //snd = new Audio("/snd/katkolle.ogg");
+    //snd.play();
 
     this.clearContainer(this.scoreContainer);
     this.clearContainer(this.katkoViesti);
