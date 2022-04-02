@@ -43,3 +43,5 @@ Uusi peli julkaistu osoitteessa oispanorssissa.fi
 -Korjattu kirjoitusvirheitä
 1.4.4 -- 31/01/2022
 -Poistettu äänet KL Corporation pyynnöstä
+1.4.4.1 -- 02/04/2022
+-Pienetty taustakuvan laatua

@@ -22,11 +22,13 @@ dogeSayings = [
   'Logger Pro!',
   'Teron matikkaa!', // Paras matikan ope
   'Kävellen Atalpasta Virtaan', // Liian kaukana
+  'Tuijan kissat', // Tosi söpöt
+  'Sivistysporvari perkele', // Anna rahat
 
   // Korsu sayings
 //  'Korsuvaluuttaa!!',
 //  'Nostan ykköskenttään!',
-//  'Annan ison käden!',
+  'Annan ison käden!',
 //  'Lisään avauskokoonpanoon!',
 
   // Huudahduksia
@@ -48,7 +50,7 @@ dogeSayings = [
   'Fysiikan tunnille!',
   'Kuvista!',
   'Parkkikiekon kierrätys',
-  'Smirnovin venäjää (voih)'
+  'Smirnovin venäjää'
 
 ]
 
