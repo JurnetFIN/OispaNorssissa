@@ -24,6 +24,7 @@ dogeSayings = [
   'Kävellen Atalpasta Virtaan', // Liian kaukana
   'Tuijan kissat', // Tosi söpöt
   'Sivistysporvari perkele', // Anna rahat
+  'Oppositio <3' // Kerrankin joku jolla on varaa järkätä bileitä
 
   // Korsu sayings
 //  'Korsuvaluuttaa!!',
