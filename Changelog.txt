@@ -45,3 +45,7 @@ Uusi peli julkaistu osoitteessa oispanorssissa.fi
 -Poistettu äänet KL Corporation pyynnöstä
 1.4.4.1 -- 02/04/2022
 -Pienetty taustakuvan laatua
+
+1.5 -- Bug 18/01/2023
+-Fixattu bugi
+-Poistettu payPal nappula

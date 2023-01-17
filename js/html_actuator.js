@@ -24,13 +24,7 @@ dogeSayings = [
   'Kävellen Atalpasta Virtaan', // Liian kaukana
   'Tuijan kissat', // Tosi söpöt
   'Sivistysporvari perkele', // Anna rahat
-  'Oppositio <3' // Kerrankin joku jolla on varaa järkätä bileitä
-
-  // Korsu sayings
-//  'Korsuvaluuttaa!!',
-//  'Nostan ykköskenttään!',
-  'Annan ison käden!',
-//  'Lisään avauskokoonpanoon!',
+  'Oppositio <3', // Kerrankin joku jolla on varaa järkätä bileitä
 
   // Huudahduksia
   'Kymppi tulee!', // Ihan varmaan
@@ -39,10 +33,6 @@ dogeSayings = [
   'Helppoo ku mikä!', // Ja paskat
   'Isänmaan tulevaisuus!', // Jos venäjä ei hyökkää
   'Lepposa peli', // TOTTA
-
-  // ?? --- ??
-//  'Kynä tippuu!', // Onko tää Pitkäsen juttu?
-//  'Vauvanaskelia!', // Mitä tää edes tarkoittaa?
 
   // Tunteja
   'Matikkaa!',
@@ -168,7 +158,11 @@ HTMLActuator.prototype.updateScore = function (score) {
       else {
           this.katkoContainerColor.setAttribute('style', 'background-color: #c00!important');
       
-}
+           }
+
+
+  var snd;
+
 
   if (difference > 0) {
 
@@ -222,12 +216,9 @@ HTMLActuator.prototype.showInfo = function () {
 
 HTMLActuator.prototype.hideInfo = function () {
     this.info.setAttribute('style','display:none;');
-}
+};
 
 HTMLActuator.prototype.goKatko = function () {
-
-    //snd = new Audio("/snd/katkolle.ogg");
-    //snd.play();
 
     this.clearContainer(this.scoreContainer);
     this.clearContainer(this.katkoViesti);
@@ -240,8 +231,9 @@ HTMLActuator.prototype.goKatko = function () {
     this.scoreContainer.appendChild(addition);
 
     var messageElement = document.createElement("img");
-    messageElement.setAttribute('src',"/img/bileet1.png");
+    messageElement.setAttribute('src',"./img/bileet1.png");
 
     this.katkoViesti.appendChild(messageElement);
     return true;
 }
+
