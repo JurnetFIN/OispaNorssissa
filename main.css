@@ -3,45 +3,59 @@ html, body {
   padding: 0;
   background: #fff;
   color: #000;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-/*  font-family: 'Comic Sans', 'Comic Sans', Chalkboard, Helvetica, Arial, sans-serif; */
-    background: url('https://oispanorssissa.fi/img/megabg.jpg');
+  font-family: 'Sharp Sans', sans-serif;
+  background: url('./img/tausta.jpg');
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
-
- }
+  height: 100%;
+  width: 100%;
+}
 
 body {
   margin: 30px 0;
-
-
-
-}
-
-.heading:after {
-  content: "Tampereen Yliopiston Norssi aiheinen 2048-peli";
-  font-size: 12px;
-  font-weight: bold;
-//display: block;
-  margin: 0;
-  color: #609;
-  background: #fff;
-//  clear: both;
-//  float:left;
-
 }
 
 h1.title {
-  color:#609;
+  margin-bottom: 10px;
+  color: #609;
   background: #fff;
   font-size: 32px;
   font-weight: bold;
-  margin: 0;
   display: block;
-  float: left;
+  text-align: center;
+  border-radius: 15px;
+  width: 500px
 }
 
+h2.title-second {
+  margin: 0;
+  font-size: 14px;
+  display: block;
+  float: left;
+  color: #609;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  width: 165px;
+  height: 55px;
+}
+
+h2.v2-text {
+  margin-top: 0;
+  margin-left: 5px;
+  color:rgb(153, 0, 61);
+  content: "V2";
+  background: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Lucida Handwriting;
+  display: block;
+  float: left;
+  text-align: center;
+  border-radius: 15px;
+  width: 75px;
+}
   #twitter-widget-0 {
     width: 100px !important;
     position: relative;
@@ -159,34 +173,39 @@ h1.title {
 .scores-container {
   float: right;
   text-align: right; 
-  background: #FFF;}
+  background: #fff;
+  width: 250px;
+  background: #fff;
+  border-radius: 15px;
+}
 
 .game-container .doge-says, .game-container .katkoviesti {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;}
-  .game-container .doge-says p {
-    position:fixed;
-    font-size: 60px;
-    font-weight: bold;
-    height: 60px;
-    line-height: 60px;
-    -webkit-animation: fade-in-out 1500ms ease-in;
-    -moz-animation: fade-in-out 1500ms ease-in;
-    animation: fade-in-out 1500ms ease-in;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  .game-container .katkoviesti {
-      position: absolute;
-          height: 400px;
-    width: 500px;
-    margin-left: auto;
+
+.game-container .doge-says p {
+  position:fixed;
+  font-size: 60px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  -webkit-animation: fade-in-out 1500ms ease-in;
+  -moz-animation: fade-in-out 1500ms ease-in;
+  animation: fade-in-out 1500ms ease-in;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.game-container .katkoviesti {
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin-left: auto;
   margin-right: auto;
   top: 50px;
-  }
+}
   .game-container .katkoviesti img {
 
     font-size: 60px;
@@ -210,8 +229,8 @@ h1.title {
     text-align: center;
     width: 200px;
     top:10px;
-
-    margin-bottom:22px;}
+    margin-bottom:22px;
+  }
 
   .info-container, .hide-info, .katko-container {
     display: inline-block;
@@ -222,7 +241,7 @@ h1.title {
     line-height: 10px;
     font-size:10px;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 15px;
     color: white;
     margin-top: 8px;
     text-align: center; }
@@ -258,9 +277,7 @@ h1.title {
   width: 60px;
   position: relative;
   display: inline-block;
-  //background: #ccc;
   padding: 15px 25px;
-/*  font-size: 25px;*/
   height: 25px;
   line-height: 42px;
   font-weight: bold;
@@ -277,13 +294,13 @@ h1.title {
     font-size: 12px;
     line-height: 13px;
     text-align: center;
-    color: #000; }
+    color: #609; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
     font-size: 26px;
     line-height: 20px;
-    color: rgba(119, 110, 101, 0.9);
+    color: #509;
     z-index: 100;
     -webkit-animation: move-up 1000ms ease-in;
     -moz-animation: move-up 1000ms ease-in;
@@ -349,7 +366,7 @@ hr {
     opacity: 1; } }
 
 .game-container {
-  margin-top: 20px;
+  margin-top: 70px;
   position: relative;
   padding: 15px;
   cursor: default;
@@ -392,7 +409,6 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      //background: #ccc;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -404,7 +420,6 @@ hr {
         display: none; }
     .game-container .game-message .buttom {
       display: inline-block;
-      //background: #ccc;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -725,5 +740,6 @@ hr {
   margin-top: 0px;
   background: #fff;
   text-align: center;
-  font-size: 14px;}
-
+  font-size: 14px;
+  border-radius: 20px;
+}
