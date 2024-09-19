@@ -14,17 +14,27 @@ function HTMLActuator() {
 }
 
 dogeSayings = [
-  // Matikka, Fysiikka ja Mielipiteet
+  // Matikka
   'TI-Nspire™ CX CAS Student Software', // Hyi helkkari // Joo Texas Instruments sais hommata parempia koodareita, ja ne sais tehdä TI-Nspire CX CAS Student Softwareen latex-supportin, koska TI-Nspire CX CAS Student Softwaren inbuilt kaavaeditori on ihan paskanen.
   'SpeedCrunch!!', // 32-bittiset floating point valuet go brrrrrrr // Eikös 32-bittisillä floateilla tuu aika isoja laskuvirheitä?
   'Abitti D:',
-  'Google Docs :(', // NALStudio ei jostain syystä tykkää, mutta yleinen mielipide on kuitenkin se, että Google Docs on oikein hyvä.
+  'Geogebra',
   'Logger Pro!',
   'Teron matikkaa!', // Paras matikan ope
-  'Kävellen Atalpasta Virtaan', // Liian kaukana
+
+  // Meemit
+  'Kävellen Atalpasta Virtaan RIP', // Liian kaukana
   'Tuijan kissat', // Tosi söpöt
-  'Sivistysporvari perkele', // Anna rahat
-  'Oppositio <3', // Kerrankin joku jolla on varaa järkätä bileitä
+  'KANSAN LEIJONAA!!!!',
+  'KANSAN LEIJONAA!!!!',
+  'KANSAN LEIJONAA!!!!',
+  '@_lewap',
+  'OASIKSEEN',
+  '#lopettakaakoreloninsoittaminen',
+  'ykköset aisoihin',
+  '#norssinkansa',
+  'oispanorssissa.fi',
+  'JODEL <3',
 
   // Huudahduksia
   'Kymppi tulee!', // Ihan varmaan
@@ -42,7 +52,6 @@ dogeSayings = [
   'Kuvista!',
   'Parkkikiekon kierrätys',
   'Smirnovin venäjää'
-
 ]
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
@@ -236,4 +245,3 @@ HTMLActuator.prototype.goKatko = function () {
     this.katkoViesti.appendChild(messageElement);
     return true;
 }
-
